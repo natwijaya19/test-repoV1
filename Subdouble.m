@@ -1,0 +1,3 @@
+classdef Subdouble < double
+
+end
