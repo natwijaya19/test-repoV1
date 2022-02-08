@@ -1,0 +1,1 @@
+myClassInstance = MyClass_v2;
