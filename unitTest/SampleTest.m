@@ -1,10 +1,15 @@
-classdef SampleTest < matlab.unittest.TestCase
-    properties (TestParameter)
-        Number = {1,2,'3',4,5};
-    end
-    methods(Test)
-        function testDouble(testCase,Number)
-            testCase.verifyClass(Number,'double')
-        end
-    end
+function tests = SampleTest
+    tests = functiontests(localfunctions);
+end
+
+function testA(testCase)
+    verifyEqual(testCase,5,5)
+end
+
+function testB(testCase)
+    verifyGreaterThan(testCase,42,13)
+end
+
+function testC(testCase)
+    verifySubstring(testCase,'hello, world','llo')
 end
