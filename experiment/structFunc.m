@@ -1,8 +1,4 @@
-function structOutput = structFunc(structInput)
-    % input transfer
-    a = structInput.a;
-    b = structInput.b;
-    c = structInput.c;
+function structOutput = structFunc(a, b, c)
     
     % calculate
     mData = [a, b, c];
@@ -12,5 +8,6 @@ function structOutput = structFunc(structInput)
     structOutput.mean = xmean;
     structOutput.sum = xsum;
     structOutput.average = xavg;
+    structOutput.mfilename = mfilename;
 
 end
