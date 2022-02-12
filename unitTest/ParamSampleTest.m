@@ -1,4 +1,4 @@
-classdef SampleTest < matlab.unittest.TestCase
+classdef ParamSampleTest < matlab.unittest.TestCase
     properties (TestParameter)
         Number = {1,2,'3',4,5};
     end
